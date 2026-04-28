@@ -13,6 +13,9 @@ class PeriodeController extends Controller
     public function index()
     {
         //
+         $result = Periode::all(); // select*from periode
+        //dd($result);
+        return view('periode.index', compact('result'));
     }
 
     /**
