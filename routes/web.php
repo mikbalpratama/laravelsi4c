@@ -9,10 +9,10 @@ use App\Http\Controllers\FakultasController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('fakultas.create');
 });
 
 Route::resource('Fakultas', FakultasController::class);
 Route::resource('Periode', PeriodeController::class);
 Route::resource('Berita', BeritaController::class);
-Route::get('/prodi', [ProdiController::class, 'index']);
+Route::resource('Prodi', ProdiController::class);
