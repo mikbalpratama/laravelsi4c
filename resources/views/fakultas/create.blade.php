@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="m-3">
+        @csrf
         <h5>form pengisian data fakultas</h5>
   <label for="exampleFormControlInput1" class="form-label">nama fakultas</label>
   <input type="text" class="form-control" id="nama" placeholder="masukan nama fakultas">

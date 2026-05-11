@@ -1,4 +1,32 @@
-<h2>data Fakultas</h2>
-@foreach($result as $item)
-    {{ $item->nama }}-{{ $item->singkatan }}-{{ $item->dekan }}<br/>
+@extends('main')
+
+@section('title','Fakultas')
+@section('content')
+    
+
+<h1>data Fakultas</h1>
+<table class="table table-bordered table-hover"> 
+    <tr>
+        <th>no</th>
+        <th>nama fakultas</th>
+        <th>singkatan</th>
+        <th>dekan</th>
+
+
+
+    </tr>
+    @foreach($result as $key => $item)
+    <tr>
+        <td>{{ $key + 1 }}</td>
+        <td>{{ $item->nama }}</td>
+        <td>{{ $item->singkatan }}</td>
+        <td>{{ $item->dekan }}</td>
+
+    </tr>
+    
 @endforeach
+</table>
+
+@endsection
+
+
