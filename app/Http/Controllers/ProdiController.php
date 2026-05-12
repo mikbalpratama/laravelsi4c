@@ -12,7 +12,7 @@ class ProdiController extends Controller
      */
     public function index()
     {
-       $prodis = Prodi::with('fakultas')->get();
+       $prodis = Prodi::with('Fakultas')->get();
     return view('prodi.index', compact('prodis'));
     }
 

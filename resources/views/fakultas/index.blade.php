@@ -5,6 +5,7 @@
     
 
 <h1>data Fakultas</h1>
+<a href="{{ route("Fakultas.create") }}" class="btn btn-primary mb-3">Tambah Fakultas</a>
 <table class="table table-bordered table-hover"> 
     <tr>
         <th>no</th>

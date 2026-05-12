@@ -356,6 +356,12 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a href="{{ url('Periode') }}" class="nav-link">
+                  <i class="nav-icon bi bi-palette"></i>
+                  <p>Periode</p>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon bi bi-box-seam-fill"></i>
                   <p>
@@ -770,7 +776,7 @@
             <!--begin::Row-->
             <div class="row">
               <div class="col-sm-6">
-                <h3 class="mb-0">Unfixed Layout</h3>
+                <h3 class="mb-0">@yield('title')</h3>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
