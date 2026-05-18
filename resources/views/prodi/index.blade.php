@@ -1,12 +1,14 @@
 @extends('main')
 
-@section('title','Prodi')
+@section('title','Program Studi')
 @section('content')
+
+<a href="{{ route("Prodi.create") }}" class="btn btn-primary mb-3">Tambah Program Studi</a>
     
 
-<h1>Data Prodi</h1>
+<h1>Data Program Studi</h1>
 
-<table border="1" cellpadding="10">
+<table class="table table-bordered table-hover">
     <tr>
         <th>No</th>
         <th>Nama Prodi</th>
