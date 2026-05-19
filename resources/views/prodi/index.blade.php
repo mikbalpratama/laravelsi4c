@@ -4,6 +4,11 @@
 @section('content')
 
 <a href="{{ route("Prodi.create") }}" class="btn btn-primary mb-3">Tambah Program Studi</a>
+@session('success')
+    <div class="alert alert-success ">
+        {{ $value }}
+    </div>
+@endsession
     
 
 <h1>Data Program Studi</h1>
@@ -24,6 +29,13 @@
         <td>{{ $prodi->singkatan }}</td>
         <td>{{ $prodi->kaprodi }}</td>
         <td>{{ $prodi->fakultas->nama ?? '-' }}</td>
+        <td><form method="POST" action="{{ route('Prodi.destroy', $prodi->id) }}">
+@csrf
+<input name="_method" type="hidden" value="DELETE">
+<button type="submit" class="btn btn-xs btn-danger btn-rounded show_confirm"
+    data-toggle="tooltip" title='Delete'
+    data-nama='{{ $prodi->nama_prodi }}'>Hapus</button>
+</form></td>
     </tr>
     @endforeach
 

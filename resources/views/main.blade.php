@@ -29,7 +29,7 @@
     <!--begin::Accessibility Features-->
     <!-- Skip links will be dynamically added by accessibility.js -->
     <meta name="supported-color-schemes" content="light dark" />
-    <link rel="preload" href="../css/adminlte.css" as="style" />
+    <link rel="preload" href="{{ url('css/adminlte.css') }}" as="style" />
     <!--end::Accessibility Features-->
 
     <!--begin::Fonts-->
@@ -60,7 +60,7 @@
     <!--end::Third Party Plugin(Bootstrap Icons)-->
 
     <!--begin::Required Plugin(AdminLTE)-->
-    <link rel="stylesheet" href="../css/adminlte.css" />
+    <link rel="stylesheet" href="{{ url('css/adminlte.css') }}" />
     <!--end::Required Plugin(AdminLTE)-->
   </head>
   <!--end::Head-->
@@ -110,7 +110,7 @@
                   <div class="d-flex">
                     <div class="flex-shrink-0">
                       <img
-                        src="../assets/img/user1-128x128.jpg"
+                        src="{{ url('assets/img/user1-128x128.jpg') }}"
                         alt="User Avatar"
                         class="img-size-50 rounded-circle me-3"
                       />
@@ -136,7 +136,7 @@
                   <div class="d-flex">
                     <div class="flex-shrink-0">
                       <img
-                        src="../assets/img/user8-128x128.jpg"
+                        src="{{ url('assets/img/user8-128x128.jpg') }}"
                         alt="User Avatar"
                         class="img-size-50 rounded-circle me-3"
                       />
@@ -162,7 +162,7 @@
                   <div class="d-flex">
                     <div class="flex-shrink-0">
                       <img
-                        src="../assets/img/user3-128x128.jpg"
+                        src="{{ url('assets/img/user3-128x128.jpg') }}"
                         alt="User Avatar"
                         class="img-size-50 rounded-circle me-3"
                       />
@@ -230,22 +230,22 @@
             <li class="nav-item dropdown user-menu">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 <img
-                  src="../assets/img/user2-160x160.jpg"
+                  src="{{ url('assets/img/Screenshot 2026-05-19 124357.jpg.png') }}"
                   class="user-image rounded-circle shadow"
                   alt="User Image"
                 />
-                <span class="d-none d-md-inline">Alexander Pierce</span>
+                <span class="d-none d-md-inline">JOEL PURBA</span>
               </a>
               <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                 <!--begin::User Image-->
                 <li class="user-header text-bg-primary">
                   <img
-                    src="../assets/img/user2-160x160.jpg"
+                    src="{{ url('assets/img/Screenshot 2026-05-19 124357.jpg.png') }}"
                     class="rounded-circle shadow"
                     alt="User Image"
                   />
                   <p>
-                    Alexander Pierce - Web Developer
+                    JOEL PURBA - Web Developer
                     <small>Member since Nov. 2023</small>
                   </p>
                 </li>
@@ -287,10 +287,10 @@
         <!--begin::Sidebar Brand-->
         <div class="sidebar-brand">
           <!--begin::Brand Link-->
-          <a href="../index.html" class="brand-link">
+          <a href="{{ url('index.html') }}" class="brand-link">
             <!--begin::Brand Image-->
             <img
-              src="../assets/img/AdminLTELogo.png"
+              src="{{ url('assets/img/AdminLTELogo.png') }}"
               alt="AdminLTE Logo"
               class="brand-image opacity-75 shadow"
             />
@@ -324,19 +324,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../index.html" class="nav-link">
+                    <a href="{{ url('index.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v1</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../index2.html" class="nav-link">
+                    <a href="{{ url('index2.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v2</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../index3.html" class="nav-link">
+                    <a href="{{ url('index3.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v3</p>
                     </a>
@@ -371,19 +371,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../widgets/small-box.html" class="nav-link">
+                    <a href="{{ url('widgets/small-box.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Small Box</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../widgets/info-box.html" class="nav-link">
+                    <a href="{{ url('widgets/info-box.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>info Box</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../widgets/cards.html" class="nav-link">
+                    <a href="{{ url('widgets/cards.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Cards</p>
                     </a>
@@ -401,61 +401,61 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../layout/unfixed-sidebar.html" class="nav-link active">
+                    <a href="{{ url('layout/unfixed-sidebar.html') }}" class="nav-link active">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Default Sidebar</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/fixed-sidebar.html" class="nav-link">
+                    <a href="{{ url('layout/fixed-sidebar.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Sidebar</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/fixed-header.html" class="nav-link">
+                    <a href="{{ url('layout/fixed-header.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Header</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/fixed-footer.html" class="nav-link">
+                    <a href="{{ url('layout/fixed-footer.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Footer</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/fixed-complete.html" class="nav-link">
+                    <a href="{{ url('layout/fixed-complete.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Complete</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/layout-custom-area.html" class="nav-link">
+                    <a href="{{ url('layout/layout-custom-area.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Layout <small>+ Custom Area </small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/sidebar-mini.html" class="nav-link">
+                    <a href="{{ url('layout/sidebar-mini.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/collapsed-sidebar.html" class="nav-link">
+                    <a href="{{ url('layout/collapsed-sidebar.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini <small>+ Collapsed</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/logo-switch.html" class="nav-link">
+                    <a href="{{ url('layout/logo-switch.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini <small>+ Logo Switch</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../layout/layout-rtl.html" class="nav-link">
+                    <a href="{{ url('layout/layout-rtl.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Layout RTL</p>
                     </a>
@@ -472,19 +472,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../UI/general.html" class="nav-link">
+                    <a href="{{ url('UI/general.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>General</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../UI/icons.html" class="nav-link">
+                    <a href="{{ url('UI/icons.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Icons</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../UI/timeline.html" class="nav-link">
+                    <a href="{{ url('UI/timeline.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Timeline</p>
                     </a>
@@ -501,7 +501,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../forms/general.html" class="nav-link">
+                    <a href="{{ url('forms/general.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>General Elements</p>
                     </a>
@@ -518,7 +518,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../tables/simple.html" class="nav-link">
+                    <a href="{{ url('tables/simple.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Simple Tables</p>
                     </a>
@@ -546,13 +546,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="../examples/login.html" class="nav-link">
+                        <a href="{{ url('examples/login.html') }}" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Login</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="../examples/register.html" class="nav-link">
+                        <a href="{{ url('examples/register.html') }}" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Register</p>
                         </a>
@@ -569,13 +569,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="../examples/login-v2.html" class="nav-link">
+                        <a href="{{ url('examples/login-v2.html') }}" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Login</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="../examples/register-v2.html" class="nav-link">
+                        <a href="{{ url('examples/register-v2.html') }}" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Register</p>
                         </a>
@@ -583,7 +583,7 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/lockscreen.html" class="nav-link">
+                    <a href="{{ url('examples/lockscreen.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Lockscreen</p>
                     </a>
@@ -593,19 +593,19 @@
 
               <li class="nav-header">DOCUMENTATIONS</li>
               <li class="nav-item">
-                <a href="../docs/introduction.html" class="nav-link">
+                <a href="{{ url('docs/introduction.html') }}" class="nav-link">
                   <i class="nav-icon bi bi-download"></i>
                   <p>Installation</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../docs/layout.html" class="nav-link">
+                <a href="{{ url('docs/layout.html') }}" class="nav-link">
                   <i class="nav-icon bi bi-grip-horizontal"></i>
                   <p>Layout</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../docs/color-mode.html" class="nav-link">
+                <a href="{{ url('docs/color-mode.html') }}" class="nav-link">
                   <i class="nav-icon bi bi-star-half"></i>
                   <p>Color Mode</p>
                 </a>
@@ -620,13 +620,13 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../docs/components/main-header.html" class="nav-link">
+                    <a href="{{ url('docs/components/main-header.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Main Header</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../docs/components/main-sidebar.html" class="nav-link">
+                    <a href="{{ url('docs/components/main-sidebar.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Main Sidebar</p>
                     </a>
@@ -643,7 +643,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../docs/javascript/treeview.html" class="nav-link">
+                    <a href="{{ url('docs/javascript/treeview.html') }}" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Treeview</p>
                     </a>
@@ -651,25 +651,25 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="../docs/browser-support.html" class="nav-link">
+                <a href="{{ url('docs/browser-support.html') }}" class="nav-link">
                   <i class="nav-icon bi bi-browser-edge"></i>
                   <p>Browser Support</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../docs/how-to-contribute.html" class="nav-link">
+                <a href="{{ url('docs/how-to-contribute.html') }}" class="nav-link">
                   <i class="nav-icon bi bi-hand-thumbs-up-fill"></i>
                   <p>How To Contribute</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../docs/faq.html" class="nav-link">
+                <a href="{{ url('docs/faq.html') }}" class="nav-link">
                   <i class="nav-icon bi bi-question-circle-fill"></i>
                   <p>FAQ</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../docs/license.html" class="nav-link">
+                <a href="{{ url('docs/license.html') }}" class="nav-link">
                   <i class="nav-icon bi bi-patch-check-fill"></i>
                   <p>License</p>
                 </a>
@@ -899,6 +899,32 @@
         }
       });
     </script>
+
+    {{-- jquery --}}
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+{{-- SweetAlert Script --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script type="text/javascript">
+    $('.show_confirm').click(function(event) {
+        var form = $(this).closest("form");
+        var nama = $(this).data("nama");
+        event.preventDefault();
+        swal({
+                title: `Apakah Anda yakin ingin menghapus data ${nama} ini?`,
+                text: "If you delete this, it will be gone forever.",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    form.submit();
+                }
+            });
+    });
+</script>
+
+
     <!--end::OverlayScrollbars Configure-->
     <!--end::Script-->
   </body>

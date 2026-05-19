@@ -6,6 +6,12 @@
 
 <h1>data Fakultas</h1>
 <a href="{{ route("Fakultas.create") }}" class="btn btn-primary mb-3">Tambah Fakultas</a>
+@session('success')
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ $value }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+@endsession
 <table class="table table-bordered table-hover"> 
     <tr>
         <th>no</th>
@@ -22,6 +28,16 @@
         <td>{{ $item->nama }}</td>
         <td>{{ $item->singkatan }}</td>
         <td>{{ $item->dekan }}</td>
+        <td>
+            <a href="{{ route('Fakultas.edit', $item->id) }}" class="btn btn-warning btn-rounded">Edit</a>
+            <form method="POST" action="{{ route('Fakultas.destroy', $item->id) }}">
+@csrf
+<input name="_method" type="hidden" value="DELETE">
+<button type="submit" class="btn btn-xs btn-danger btn-rounded show_confirm"
+    data-toggle="tooltip" title='Delete'
+    data-nama='{{ $item->nama }}'>Hapus</button>
+</form>
+        </td>
 
     </tr>
     
