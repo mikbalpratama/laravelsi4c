@@ -1,7 +1,7 @@
 @extends('main')
 @section('title','Tambah Periode')
 @section('content')
-        <form action="{{ route('Periode.store') }}" method="POST">
+        <form action="{{ route('periode.store') }}" method="POST">
             @csrf
             <div class="form-group mb-3">
                 <label for="kode_smt" class="form-label">kode_smt</label>

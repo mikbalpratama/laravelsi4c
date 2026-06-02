@@ -41,7 +41,7 @@ class FakultasController extends Controller
         ]);
 
         Fakultas::create($input);
-        return redirect()->route('Fakultas.index')->with('success', 'Fakultas berhasil ditambahkan.');
+        return redirect()->route('fakultas.index')->with('success', 'Fakultas berhasil ditambahkan.');
     }
 
     /**
@@ -60,7 +60,7 @@ class FakultasController extends Controller
         
         $fakultas = Fakultas::find($fakultas);
         //dd($fakultas);
-        return view('Fakultas.edit', compact('Fakultas'));
+        return view('fakultas.edit', compact('fakultas'));
     }
 
     /**
@@ -79,6 +79,6 @@ class FakultasController extends Controller
         $fakultas = Fakultas::find($fakultas);
         //dd($fakultas);
         $fakultas->delete();
-        return redirect()->route('Fakultas.index')->with('success', 'Fakultas berhasil dihapus.');
+        return redirect()->route('fakultas.index')->with('success', 'Fakultas berhasil dihapus.');
     }
 }

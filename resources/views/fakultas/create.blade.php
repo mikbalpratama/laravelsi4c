@@ -1,7 +1,7 @@
 @extends('main')
 @section('title','Tambah Fakultas')
 @section('content')
-        <form action="{{ route('Fakultas.store') }}" method="POST">
+        <form action="{{ route('fakultas.store') }}" method="POST">
             @csrf
             <div class="form-group mb-3">
                 <label for="nama" class="form-label">Nama Fakultas</label>

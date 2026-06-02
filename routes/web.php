@@ -1,18 +1,18 @@
 <?php
 
-
-
-use App\Http\Controllers\ProdiController;
-use App\Http\Controllers\BeritaController;
-use App\Http\Controllers\PeriodeController;
 use App\Http\Controllers\FakultasController;
+use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\PeriodeController;
+use App\Http\Controllers\ProdiController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 
 Route::get('/', function () {
-    return view('fakultas.create');
+    return view('fakultas.index');
 });
 
-Route::resource('Fakultas', FakultasController::class);
-Route::resource('Periode', PeriodeController::class);
-Route::resource('Berita', BeritaController::class);
-Route::resource('Prodi', ProdiController::class);
+Route::resource('/fakultas', FakultasController::class)->parameters(['fakultas' => 'fakultas']);
+Route::resource('/periode', PeriodeController::class);
+Route::resource('/prodi', ProdiController::class);
+Route::resource('/mahasiswa', MahasiswaController::class);
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');

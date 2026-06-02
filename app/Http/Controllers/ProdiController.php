@@ -39,7 +39,7 @@ class ProdiController extends Controller
         ]);
 
         Prodi::create($input);
-        return redirect()->route('Prodi.index')->with('success', 'Program Studi berhasil ditambahkan.');
+        return redirect()->route('prodi.index')->with('success', 'Program Studi berhasil ditambahkan.');
     }
 
     /**
@@ -69,11 +69,11 @@ class ProdiController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($prodi)
+    public function destroy(Prodi $prodi)
     {
-        $prodi = Prodi::find($prodi);
+        $prodi = Prodi::find($Prodi);
         //dd($prodi);
         $prodi->delete();
-        return redirect()->route('Prodi.index')->with('success', 'Program Studi berhasil dihapus.');
+        return redirect()->route('prodi.index')->with('success', 'Program Studi berhasil dihapus.');
     }
 }

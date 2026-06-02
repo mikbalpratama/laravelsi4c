@@ -5,7 +5,7 @@
     
 
 <h1>data Periode</h1>
-<a href="{{ route("Periode.create") }}" class="btn btn-primary mb-3">Tambah Periode</a>
+<a href="{{ route("periode.create") }}" class="btn btn-primary mb-3">Tambah Periode</a>
 @session('success')
     <div class="alert alert-success alert-dismissible fade show" role="alert">
         {{ $value }}
@@ -26,7 +26,7 @@
         <td>{{ $key + 1 }}</td>
         <td>{{ $item->kode_smt }}</td>
         <td>{{ $item->tahun_akademik }}</td>
-        <td><form method="POST" action="{{ route('Periode.destroy', $item->id) }}">
+        <td><form method="POST" action="{{ route('periode.destroy', $item->id) }}">
 @csrf
 <input name="_method" type="hidden" value="DELETE">
 <button type="submit" class="btn btn-xs btn-danger btn-rounded show_confirm"

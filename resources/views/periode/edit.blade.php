@@ -1,7 +1,7 @@
 @extends('main')
 @section('title','Edit Fakultas')
 @section('content')
-        <form action="{{ route('Fakultas.update', $fakultas->id) }}" method="POST">
+        <form action="{{ route('fakultas.update', $fakultas->id) }}" method="POST">
             @csrf
             @method('PUT')
             <div class="form-group mb-3">

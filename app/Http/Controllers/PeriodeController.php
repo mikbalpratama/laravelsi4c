@@ -37,7 +37,7 @@ class PeriodeController extends Controller
         ]);
 
         Periode::create($input);
-        return redirect()->route('Periode.index')->with('success', 'Periode berhasil ditambahkan.');
+        return redirect()->route('periode.index')->with('success', 'Periode berhasil ditambahkan.');
     }
 
     /**
@@ -72,6 +72,6 @@ class PeriodeController extends Controller
          $periode = Periode::find($periode);
         //dd($periode);
         $periode->delete();
-        return redirect()->route('Periode.index')->with('success', 'Periode berhasil dihapus.');
+        return redirect()->route('periode.index')->with('success', 'Periode berhasil dihapus.');
     }
 }
