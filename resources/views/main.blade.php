@@ -207,7 +207,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img src="{{ url('assets/img/user2-160x160.jpg') }}"
                                 class="user-image rounded-circle shadow" alt="User Image" />
-                            <span class="d-none d-md-inline">Alexander Pierce</span>
+                            <span class="d-none d-md-inline">{{ Auth::user()->name }}</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                             <!--begin::User Image-->
@@ -215,7 +215,7 @@
                                 <img src="{{ url('assets/img/user2-160x160.jpg') }}" class="rounded-circle shadow"
                                     alt="User Image" />
                                 <p>
-                                    Alexander Pierce - Web Developer
+                                    {{ Auth::user()->name }} - Web Developer
                                     <small>Member since Nov. 2023</small>
                                 </p>
                             </li>
@@ -240,6 +240,20 @@
                             <!--begin::Menu Footer-->
                             <li class="user-footer">
                                 <a href="#" class="btn btn-outline-secondary">Profile</a>
+                                <a href="#" class="btn btn-outline-secondary">Profile</a>
+
+<!-- Bagian di bawah ini yang ditambahkan -->
+<!-- Authentication -->
+<form method="POST" action="{{ route('logout') }}" class="d-inline">
+@csrf
+
+<x-dropdown-link :href="route('logout')"
+    onclick="event.preventDefault();
+                    this.closest('form').submit();"
+    class="btn btn-outline-danger float-end">
+    {{ __('Log Out') }}
+</x-dropdown-link>
+</form>
                                 <a href="#" class="btn btn-outline-danger float-end">Sign out</a>
                             </li>
                             <!--end::Menu Footer-->

@@ -20,6 +20,6 @@ class DashboardController extends Controller
         $grafik_angkatan = DB::select("select left(m.npm,2) as Tahun_Angkatan, count(*) as jumlah from laravelsi4c.mahasiswas m group by left(m.npm,2)");
 
 
-        return view('dashboard', compact('grafikmhs', 'grafik_angkatan'));
+        return view('dashboard-adminlte', compact('grafikmhs', 'grafik_angkatan'));
     }
 }
